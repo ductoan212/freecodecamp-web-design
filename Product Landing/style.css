@@ -1,0 +1,124 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #EEEEEE;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #aaaaaa;
+    /* background-color: beige; */
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    height: 50px;
+    width: 100%;
+}
+
+#header-img {
+    width: 300px;
+    /* background-color: blue; */
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    /* background-color: brown; */
+}
+
+.nav-link {
+    display: inline;
+    margin: 0px 50px 0px 50px;
+    /* background-color: rebeccapurple; */
+    font-style: normal;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#lable {
+    font-size: 30;
+    text-align: center;
+}
+
+#email {
+    width: 75%;
+    font-size: 1.1em;
+    padding: 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#submit {
+    background-color: #F1C40F;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px 20px 10px 20px;
+    font-weight: 1000;
+    font-size: 1.2em;
+}
+
+#features {
+    width: 60%;
+    margin: auto;
+}
+
+#video {
+    margin: auto;
+    display: block;
+}
+
+#pricing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.card {
+    /* width: 20%; */
+    border: 1px solid black;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    #header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100px;
+    }
+    #nav-bar {
+        flex-direction: column;
+        justify-content: start;
+    }
+    .nav-link {
+        margin-left: 10px;
+    }
+    #video {
+        width: auto;
+        height: auto;
+    }
+    #pricing {
+        flex-direction: column;
+    }
+    #form {
+        margin-top: 100px;
+    }
+}

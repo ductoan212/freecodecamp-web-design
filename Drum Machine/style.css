@@ -1,0 +1,74 @@
+.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #EDDFEF;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+
+#drum-machine {
+    /* background-color: #888; */
+    border: 5px solid #888;
+    padding: 2%;
+    border-radius: 5%;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+#display {
+    /* background-color: #888; */
+    background: rgb(136, 136, 136);
+    background: linear-gradient(319deg, rgba(136, 136, 136, 1) 0%, rgba(85, 85, 85, 1) 50%, rgba(136, 136, 136, 1) 100%);
+    text-align: center;
+    padding: 3%;
+    font-size: 250%;
+    color: #FFFACD;
+}
+
+.drum-pad {
+    display: block;
+    padding: 20px 30px;
+    margin: 20px;
+    background-color: #555;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #000;
+    color: #C8F7C5;
+    /* Khong cho boi den */
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.drum-pad:active {
+    background-color: yellowgreen;
+    box-shadow: 2px 2px 10px yellow;
+}
+
+.drum-pad:focus {
+    background-color: yellowgreen;
+    box-shadow: 2px 2px 10px yellow;
+}
